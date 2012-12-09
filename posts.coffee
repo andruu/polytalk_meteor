@@ -16,6 +16,7 @@ if Meteor.isClient
       Posts.insert({title: title, body: body, time: Date.now()})
       Meteor.call('savePost', title, body)
       Meteor.call('loadPosts')
+      $('form')[0].reset()
       e.preventDefault()
 
   Template.posts.events
