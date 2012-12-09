@@ -1,0 +1,6 @@
+CREATE TABLE posts(
+  id INTEGER PRIMARY KEY  AUTOINCREMENT  UNIQUE,
+  title TEXT,
+  body TEXT,
+  created_at DATE
+);
